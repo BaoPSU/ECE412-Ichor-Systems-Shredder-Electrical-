@@ -1,0 +1,10 @@
+,,,,,,,,,,
+DirectLOGIC PLC CPU(H2-DM1E),,POINT TYPE,,,,,,,,
+,,Hardware Point,,,,,Virtual Point,,,
+Point Description,Origin Address,DO,DI,AO,AI,Pwr,,Destination Address,Destination Description,Notes
+Power and communication interface,Backplane Connector (Left Edge),0.0,0.0,0.0,0.0,1.0,0.0,D2-09B-1 Base Slot 1 Connector,Provides power and backplane communication,—
+Ground reference,Backplane GND,0.0,0.0,0.0,0.0,1.0,0.0,D2-09B-1 Base Ground Bus,Common ground for logic power,—
+,Total Points,=SUM(C5:C6),=SUM(D5:D6),=SUM(E5:E6),=SUM(F5:F6),=SUM(G5:G6),=SUM(H5:H6),,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,

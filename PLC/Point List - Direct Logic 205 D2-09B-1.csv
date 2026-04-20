@@ -1,0 +1,16 @@
+ Direct Logic 205 D2-09B-1,,POINT TYPE,,,,,,,,
+,,Hardware Point,,,,,Virtual Point,,,
+Point Description,Origin Address,DO,DI,AO,AI,Pwr,,Destination Address,Destination Description,Notes
+PLC Rack (DirectLOGIC 205) – Base,Base,0.0,0.0,0.0,0.0,1.0,—,D2-09B-1,Base / Power Unit,Rack base unit providing backplane power and I/O bus to all installed modules. Supports up to 9 I/O slots.
+PLC Rack (DirectLOGIC 205) – Line Input,L,0.0,0.0,0.0,0.0,1.0,—,L,MORSETTITALIA EURO S10H-5H Fuse Block,Line from wall -> passes through power switch (closed = line passes) -> enters EURO S10H-5H fuse block with 1A fast blow fuse (PLC branch) -> enters PLC L terminal
+PLC Rack (DirectLOGIC 205) – Neutral Input,N,0.0,0.0,0.0,0.0,1.0,—,N,Neutral Bus,Neutral from wall -> directly connected to PLC N terminal
+PLC Rack (DirectLOGIC 205) – Ground (Protective Earth),G,0.0,0.0,0.0,0.0,1.0,—,G,Ground Bus,Protective earth -> connected to PLC ground terminal / chassis bond
+PLC Rack (DirectLOGIC 205) – Slot 1,Slot 1,0.0,0.0,0.0,0.0,0.0,—,H2-DM1E,CPU / Ethernet Module,CPU module with built-in Ethernet port. Executes the ladder logic program and handles network communications.
+PLC Rack (DirectLOGIC 205) – Slot 2,Slot 2,0.0,8.0,0.0,0.0,0.0,—,D2-08ND3,8-Point Discrete Input Module,"8-channel 24VDC discrete (digital) input module. Accepts sink/source wiring. Used for reading on/off signals such as pushbuttons, limit switches, and proximity sensors."
+PLC Rack (DirectLOGIC 205) – Slot 3,Slot 3,0.0,0.0,0.0,6.0,0.0,—,F2-06AD-1,6-Channel Analog Input Module,"6-channel analog input module. Accepts 4–20mA or 0–10V signals. Used for reading continuous process values such as pressure, temperature, flow, or speed sensors."
+PLC Rack (DirectLOGIC 205) – Slot 4,Slot 4,0.0,0.0,0.0,4.0,0.0,—,F2-04RTD,4-Channel RTD Input Module,4-channel RTD (Resistance Temperature Detector) input module. Compatible with PT100/PT1000 and other RTD types. Used for precision temperature measurement.
+PLC Rack (DirectLOGIC 205) – Slot 5,Slot 5,8.0,0.0,0.0,0.0,0.0,—,D2-08TD2,8-Point Discrete Output Module,"8-channel 12–24VDC transistor (sourcing) discrete output module. Used for switching loads such as relays, solenoids, indicator lights, and motor starters."
+PLC Rack (DirectLOGIC 205) – Slot 6,Slot 6,0.0,0.0,2.0,0.0,0.0,—,F2-02DA-1,2-Channel Analog Output Module,"2-channel analog output module. Provides 4–20mA or 0–10V signals. Used for sending continuous control signals to devices such as VFDs, control valves, or analog meters."
+PLC Rack (DirectLOGIC 205) – Slot 7,Slot 7,—,—,—,—,—,—,D2-Fill,Fill Panel,Blank fill panel. No I/O. Slot reserved for future expansion.
+PLC Rack (DirectLOGIC 205) – Slot 8,Slot 8,—,—,—,—,—,—,D2-Fill,Fill Panel,Blank fill panel. No I/O. Slot reserved for future expansion.
+PLC Rack (DirectLOGIC 205) – Slot 9,Slot 9,—,—,—,—,—,—,D2-Fill,Fill Panel,Blank fill panel. No I/O. Slot reserved for future expansion.

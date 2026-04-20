@@ -1,0 +1,10 @@
+,,,,,,,,,,
+Output Module (F2-02DAS-2),,POINT TYPE,,,,,,,,
+,,Hardware Point,,,,,Virtual Point,,,
+Point Description,Origin Address,DO,DI,AO,AI,Pwr,,Destination Address,Destination Description,Notes
+Analog Common (CH1),CH1-V,0.0,0.0,1.0,0.0,0.0,0.0,CM,VFD (GS1-20P2) through Ziplink ZL-RTB20,0V1 and CH1-V are internally shorted
+Analog Output CH1,CH1+V,0.0,0.0,1.0,0.0,0.0,0.0,AL,VFD (GS1-20P2) though Ziplink ZL-RTB20,0–10 V speed command to VFD
+Module Logic +24 V, +V1 ,0.0,0.0,0.0,0.0,1.0,0.0,VDC +24V,PLC Base (D2-09B-1) through ZipLink ZL-RTB20,"Powers analog output circuitry, also fused with 1A fast blow fuse"
+Module Logic 0 V,0V1,0.0,0.0,0.0,0.0,1.0,0.0,VDC – 0V,PLC Base (D2-09B-1) through ZipLink ZL-RTB20,Common return for module logic
+Slot Power Feed,Backplane,0.0,0.0,0.0,0.0,1.0,0.0,PLC Base Backplane,Internal slot power,No external wiring
+,Total Points,=SUM(C5:C9),=SUM(D5:D9),=SUM(E5:E9),=SUM(F5:F9),=SUM(G5:G9),=SUM(H5:H9),,,

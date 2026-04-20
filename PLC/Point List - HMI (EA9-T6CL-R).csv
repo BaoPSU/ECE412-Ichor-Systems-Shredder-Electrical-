@@ -1,0 +1,9 @@
+,,,,,,,,,,
+6″ C-More color touch panel HMI (EA9-T6CL-R),,POINT TYPE,,,,,,,,
+,,Hardware Point,,,,,Virtual Point,,,
+Point Description,Origin Address,DO,DI,AO,AI,Pwr,,Destination Address,Destination Description,Notes
+HMI Serial Comm Port,COM Port,0.0,0.0,0.0,0.0,0.0,1.0,Serial Port,H2-DM1E ,"Serial link between PLC CPU and C-More HMI. Configure PLC and HMI ports for matching baud, parity, stop bits"
+HMI Power +V, +VDC,0.0,0.0,0.0,0.0,1.0,0.0, +V,Rhino power supply(PSB12-030-P),HMI DC input powered from PSB12-030-P
+HMI Power 0 V,0VDC,0.0,0.0,0.0,0.0,1.0,0.0,0V,Rhino power supply(PSB12-030-P),0 VDC return to Rhino power supply; tie to system DC common as required by design
+HMI Ground,Ground,0.0,0.0,0.0,0.0,1.0,0.0,Ground,Ground,
+,Total Points,=SUM(C5:C8),=SUM(D5:D8),=SUM(E5:E8),=SUM(F5:F8),=SUM(G5:G8),=SUM(H5:H8),,,
