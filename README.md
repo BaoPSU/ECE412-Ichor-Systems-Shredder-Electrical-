@@ -5,8 +5,14 @@
 Industry Sponsor: **MME / Ichor Systems** (Bridget Lannigan)
 Faculty Advisors: Prof. Andrew Greenberg, Dr. Jonathan Bird (EE), Robert Paxton (ME)
 
-**Team "I'm so Shredded inc.":** Bao Nguyen, Fearghus Tyler, Yaqoub Rabiah, Fox Kang
-Contact: yrabiah@pdx.edu
+**Team "I'm so Shredded inc.":**
+
+| Name | Email |
+|---|---|
+| Bao Nguyen | baon@pdx.edu |
+| Fearghus Tyler | fearghus@pdx.edu |
+| Yaqoub Rabiah | yrabiah@pdx.edu |
+| Fox Kang | foxkang@pdx.edu |
 
 ---
 
@@ -19,7 +25,7 @@ The mechanical structure and cutting blades are handled by a separate ME team. T
 - VFD-based motor control (3–5 HP, target 70–90 RPM output shaft speed)
 - HMI operator interface (ESP32 with display, RS485/MODBUS to VFD)
 - Safety systems: two-hand start, emergency stop, lid interlock, overload/overcurrent protection
-- PLC ladder logic for control sequencing
+- PLC ladder logic for control sequencing (DirectLogic 205 / Direct Automation)
 - Status indicator lights (Power, Running, Fault)
 - Electrical protection: fuses, breakers, motor contactor, thermal shutdown
 
@@ -70,6 +76,10 @@ HMI/            HMI project file (MagicPanel .mgp)
 - 3–5 HP motor + gearbox (ME interface)
 - ESP32 HMI display (operator interface)
 - Safety circuit: two-hand start buttons, E-stop, lid interlock, motor contactor
+
+**PLC (DirectLogic 205 rack — Direct Automation):**
+- Ladder logic controls motor run/stop sequencing and safety interlocks
+- Program file: `PLC/Shredder_Ladder_logic_v1.dmd`
 
 **Software (Arduino/C++ on ESP32):**
 - HMI: displays Ready / Running / Fault state, motor speed, fault messages
